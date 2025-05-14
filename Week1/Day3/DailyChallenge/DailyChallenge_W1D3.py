@@ -1,14 +1,14 @@
-#Challenge 1
-user_input = input('Enter a word: ')
-letter_indices = {}
-i = 0
-for i in range(len(user_input)):
-    letter = user_input[i]
-    if letter in letter_indices:
-        letter_indices[letter].append(i)
-    else:
-        letter_indices[letter] = [i]
-print(letter_indices)
+# #Challenge 1
+# user_word = input('Enter a word: ')
+# letter_indices = {}
+# i = 0
+# for i in range(len(user_word)):
+#     letter = user_word[i]
+#     if letter in letter_indices:
+#         letter_indices[letter].append(i)
+#     else:
+#         letter_indices[letter] = [i]
+# print(letter_indices)
 
 #Challenge 2
 # 1. Данные: товары и кошелёк
@@ -36,3 +36,15 @@ if not affordable_items:
     print("Nothing")
 else:
     print(sorted(affordable_items))
+
+# #Challenge 1b
+# user_word = input('Enter a word: ')
+# out_dict = {}
+
+# for i, char in enumerate(user_word):
+#     if char in out_dict:
+#         out_dict[char].append(i)
+#     else:
+#         out_dict.update({char : [i]})
+    
+# print(out_dict)
