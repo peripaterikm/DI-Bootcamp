@@ -1,19 +1,3 @@
-# MATRIX_STR = '''
-# 7ii
-# Tsx
-# h%?
-# i #
-# sM 
-# $a 
-# #t%'''       
-
-# rows = MATRIX_STR.strip().split('\n')
-# matrix = []
-# for row in rows:
-#     matrix.append(list(row))
-
-# print(matrix)
-
 MATRIX_STR = '''
 7ii
 Tsx
@@ -30,17 +14,17 @@ for row in rows:
     matrix.append(list(row))
 
 # Step 2–3: Читаем по столбцам
-raw_message = ''
+temp_string = ''
 num_rows = len(matrix)
 num_cols = len(matrix[0])
 
 for col in range(num_cols):
     for row in range(num_rows):
-        raw_message += matrix[row][col]
+        temp_string += matrix[row][col]
 
 # Step 4: Заменим все НЕбуквы на пробелы, потом удалим лишние пробелы
 filtered = ''
-for char in raw_message:
+for char in temp_string:
     if char.isalpha():
         filtered += char
     else:
