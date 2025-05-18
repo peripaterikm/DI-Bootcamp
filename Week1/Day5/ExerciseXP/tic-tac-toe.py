@@ -102,3 +102,44 @@ def play():
 
 # Run the game
 play()
+
+# Other way
+# Создаём пустое поле
+board = [[" " for _ in range(3)] for _ in range(3)]
+
+# Функция для показа поля
+def show_board():
+    for row in board:
+        print(" | ".join(row))
+        print("-" * 9)
+
+# Проверка победы
+def check_win(p):
+    # Строки и столбцы
+    for i in range(3):
+        if board[i] == [p, p, p]: return True
+        if [board[0][i], board[1][i], board[2][i]] == [p, p, p]: return True
+    # Диагонали
+    if [board[0][0], board[1][1], board[2][2]] == [p, p, p]: return True
+    if [board[0][2], board[1][1], board[2][0]] == [p, p, p]: return True
+    return False
+
+# Игровой цикл
+player = "X"
+for turn in range(9):
+    show_board()
+    print(f"{player}'s turn")
+    r = int(input("Row (0-2): "))
+    c = int(input("Col (0-2): "))
+    if board[r][c] != " ":
+        print("Cell taken, try again.")
+        continue
+    board[r][c] = player
+    if check_win(player):
+        show_board()
+        print(f"{player} wins!")
+        break
+    player = "O" if player == "X" else "X"
+else:
+    show_board()
+    print("It's a tie!")
