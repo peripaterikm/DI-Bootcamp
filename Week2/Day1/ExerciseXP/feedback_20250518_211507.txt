@@ -1,0 +1,13 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day1/ExerciseXP/XP_W2D1.py
+suggestions for improvement:
+- In `find_oldest_cat`, using the `max` function with a `lambda` is efficient, but for a small number of cats, the iterative approach is arguably more readable for beginners. Consider adding a docstring to the function.
+- In Exercise 4, the `add_animal` method could be made slightly more efficient by using a `set` instead of a `list` to check for existing animals (checking membership in a set is O(1) rather than O(n) for a list).
+- The `sort_animals` method in Exercise 4 could include error handling for empty list case.
+- Add more comprehensive docstrings to all functions and classes to improve readability and maintainability.
+- Consider adding input validation (e.g., type checking) to prevent unexpected errors in the methods.
+Brief justification:
+- correctness: All four exercises correctly implement the specified functionality.  Exercise 1 accurately finds and prints the oldest cat. Exercise 2 correctly creates and uses `Dog` objects, printing details and comparing heights. Exercise 3 correctly prints song lyrics line by line. Exercise 4 accurately manages animals in a zoo, adding, selling, displaying, sorting, and grouping them as specified in the instructions.
+- readability: The code is generally well-structured and easy to follow. Variable names are descriptive.  However, some functions could benefit from docstrings to explain their purpose and parameters more clearly. The logic for Exercise 4 is slightly more complex and could benefit from more comments explaining the grouping algorithm.
+- performance: The performance is acceptable for the given examples. However, using a `set` in the `Zoo` class for `animals` would improve the time complexity of `add_animal`.  The `sort_animals` function is O(n log n) due to the sorting, but there could be other optimisations for the grouping algorithm.
+- security: The code does not contain any obvious security vulnerabilities. No user input is handled, so there are no risks associated with that.
+
