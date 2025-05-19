@@ -1,0 +1,12 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day1/ExerciseXP/XP_W1D1.py
+suggestions for improvement:
+- In Exercise 1, using \n and strip() is slightly less readable than using four separate print statements. Consider simpler alternatives for better readability.
+- Exercise 3 is not code, it's a list of outputs.  The exercise requires predicting the output; the provided answers are correct but not in executable code format.
+- In Exercise 8, the error handling is simplistic.  Consider cases where the user might not enter a valid name (empty input, non-alphanumeric characters). Add input validation. 
+- Add comments to clarify the purpose of each code section, especially in Exercises 7, 8, and 9.
+Brief justification:
+- correctness: The code correctly implements solutions for Exercises 1, 2, 4, 5, 6, 7, 8, and 9.  Exercise 3 provides correct answers but is not in the requested code format.  All solutions directly address the instructions provided in each exercise, fulfilling the requirements of the chapter content.
+- readability: The code is generally readable, but some improvements could make it easier to understand. Exercise 1 could be simplified, and adding comments would enhance understanding of Exercises 7, 8, and 9.  Variable names are descriptive. 
+- performance: The code's performance is efficient for all exercises; no significant performance issues are apparent. The algorithms used are straightforward and appropriate for the tasks. 
+- security: No security vulnerabilities are present. The code does not handle external inputs in a way that would introduce security risks.  The code does not interact with any external resources that could be compromised.
+

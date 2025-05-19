@@ -1,0 +1,12 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day5/DailyChallenge/DailyChallenge_W1D5.py
+suggestions for improvement:
+- In Challenge 1,  while the code correctly sorts and outputs the comma-separated string, it doesn't explicitly handle potential errors like empty input or inputs with extra spaces around commas. Adding error handling would improve robustness.
+- In Challenge 2, the `longest_word` function doesn't handle punctuation within words as instructed.  It splits the sentence based on whitespace, thus ignoring punctuation as part of the word. This needs to be corrected.
+- Improve code comments in Challenge 2. Steps 3 and 4 could be combined into a single comment explaining variable initialization and iteration.
+- Consider using more descriptive variable names (e.g., `input_sentence` instead of `sentence`).
+Brief justification:
+- correctness: Challenge 1's code correctly implements the sorting and joining steps as described. However, it lacks error handling for unusual inputs. Challenge 2's code mostly works but fails to treat punctuation as part of the word, a crucial requirement from the chapter.  This leads to incorrect results for sentences with punctuation within the longest word.
+- readability: The code is generally readable with clear steps, however, adding more descriptive variable names would improve it further. The comments in Challenge 1 are sufficient, but Challenge 2 could be improved by combining steps 3 and 4 into a single descriptive comment.
+- performance: The algorithms used in both challenges are efficient.  The sorting in Challenge 1 and the single-pass iteration in Challenge 2 have linear time complexity. No performance issues are apparent.
+- security: No security vulnerabilities are present in the code as it only deals with string manipulation and doesn't interact with external systems or user input in a way that could introduce security risks.
+
