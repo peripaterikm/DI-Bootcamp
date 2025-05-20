@@ -1,0 +1,17 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day2/ExerciseXP/XP_W1D2.py
+suggestions for improvement:
+- In Exercise 1, while the code correctly uses set operations, it could be more readable by using descriptive variable names (e.g., instead of `my_fav_numbers`, use `favorite_numbers`).
+- Exercise 2 correctly explains the immutability of tuples.  No code changes needed.
+- Exercise 3 is perfectly implemented.
+- Exercise 4's code to generate the float/integer list is functional but could be simplified using list comprehension or range with a step.
+- Exercises 5 and 6 are correctly implemented. No changes are necessary.
+- Exercise 7 is excellent and efficiently handles user input and list operations.
+- Exercise 8 functions as expected, but could use a more descriptive variable name than `user_choice`.
+- Exercise 9 correctly calculates the total ticket cost based on age. The bonus part is also well-implemented.
+- Exercise 10 efficiently removes 'Pastrami' and processes sandwich orders; the use of `pop(0)` ensures FIFO order.
+Brief justification:
+- correctness: The code accurately addresses the core requirements of each exercise outlined in the Chapter Content/Questions, including set operations, tuple immutability, list manipulation, loop structures, and user input handling.  Minor deviations in style or efficiency are noted in the feedback section.
+- readability: The code is generally readable, with clear variable names in most cases.  However, some variable names could be more descriptive. The overall structure of each exercise solution is well-organized and easy to follow.
+- performance: The code's performance is efficient for the given tasks.  There is no noticeable performance bottleneck. Potential optimizations are mentioned in the feedback (Exercise 4).
+- security: There are no security vulnerabilities in the provided code. The code only interacts with user input in a safe manner, without any external data sources or unsafe operations.
+
