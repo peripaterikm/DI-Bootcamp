@@ -1,0 +1,13 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day2/DailyChallenge/DailyChallenge_W1D2.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 correctly generates a list of multiples, fulfilling all requirements of the challenge.  However, error handling for non-integer inputs is missing.
+- Challenge 2: The code for Challenge 2 effectively removes consecutive duplicate letters.  The solution is concise.  However, it could be improved with more descriptive variable names and potentially a more robust approach for handling edge cases (empty input string).
+- Add comments to explain the logic behind each step, improving readability.
+- Consider using more descriptive variable names (e.g., `user_number` could be `target_number`, `user_length` could be `list_length`).
+- In Challenge 1, add input validation to handle cases where the user enters non-integer values or negative numbers.
+Brief justification:
+- correctness: Challenge 1's code produces the correct output for the given examples and follows the instructions (input, loop, list manipulation, arithmetic). Challenge 2's code also generates the correct output as per examples provided, removing consecutive duplicate letters and adhering to the rules.  The slight deduction is due to the lack of input validation in Challenge 1.
+- readability: The code is relatively easy to follow. However, more descriptive variable names and comments would significantly improve readability, particularly in Challenge 1 where the loop logic could be clarified. The use of single-character variable names like `i` is acceptable in short loops but can reduce readability in larger, more complex programs.
+- performance: The performance of both solutions is adequate for the given problem size.  The time complexity is linear for both challenges, which is efficient.  There's room for minor optimization, but the algorithms are fundamentally efficient.
+- security: The code doesn't have any obvious security vulnerabilities. It only interacts with user input via `input()`, and no external data or files are accessed. The input is handled within the scope of integer values (for Challenge 1) or strings (for Challenge 2). No vulnerabilities are identified.
+
