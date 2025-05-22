@@ -1,7 +1,7 @@
 import string
 import re
 
-# 📘 Part I: Analyzing a Simple String
+# 📘 Part I: analyzing a simple string
 class Text:
     def __init__(self, text):
         self.text = text
@@ -25,7 +25,7 @@ class Text:
         words = self.text.lower().split()
         return list(set(words))
 
-    # 📄 Part II: Analyzing Text from a File
+    # 📄 Part II: analyzing text from a file
     @classmethod
     def from_file(cls, file_path):
         try:
@@ -61,18 +61,18 @@ sample_text = "This is a test! Let's clean it: remove punctuation, stop words, a
 
 tm = TextModification(sample_text)
 
-print("🔹 Original text:")
+print("Original text:")
 print(tm.text)
 
-print("\n✂️ No punctuation:")
+print("\nNo punctuation:")
 print(tm.remove_punctuation())
 
-print("\n🧹 No stop words:")
+print("\nNo stop words:")
 print(tm.remove_stop_words())
 
-print("\n🚫 No special characters:")
+print("\nNo special characters:")
 print(tm.remove_special_characters())
 
-print("\n🔁 Frequency of 'test':", tm.word_frequency("test"))
-print("🔥 Most common word:", tm.most_common_word())
-print("✨ Unique words:", tm.unique_words())
+print("\nFrequency of 'test':", tm.word_frequency("test"))
+print("Most common word:", tm.most_common_word())
+print("Unique words:", tm.unique_words())
