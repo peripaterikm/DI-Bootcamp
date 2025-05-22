@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day3/DailyChallenge/DailyChallenge_W1D3.py
+suggestions for improvement:
+- In Challenge 1, using enumerate would make the code slightly more concise and readable.  Avoid unnecessary `i = 0` before the loop.
+- In Challenge 2, adding error handling (e.g., `try-except` blocks) for invalid input (non-numeric prices in `items_purchase`) would improve robustness.
+- In Challenge 2, the code could be made more readable by extracting the price cleaning logic into a separate function.
+Brief justification:
+- correctness: Both Challenge 1 and Challenge 2 solutions correctly implement the specified functionality as described in the Chapter Content/Questions.  Challenge 1 produces the expected dictionaries for various inputs, and Challenge 2 accurately identifies and sorts affordable items based on the provided wallet amount and item prices, handling the 'Nothing' case appropriately. The code follows all instructions and produces correct outputs for all examples.
+- readability: The code is generally well-structured and easy to follow. Variable names are descriptive.  However, minor improvements in code style (as suggested above) would enhance readability further.  The comments in Challenge 2 are helpful but could be more concise and focused on clarifying less obvious steps.
+- performance: The performance of both solutions is good for the given problem size. The algorithms used have linear time complexity (O(n)), which is efficient. For extremely large datasets, more sophisticated data structures or algorithms might be considered, but that's not a concern here.  The `replace()` calls in Challenge 2 could be slightly optimized but the impact is negligible for these inputs.
+- security: The code doesn't contain any obvious security vulnerabilities.  It correctly handles user input and performs operations in a safe manner. There are no external dependencies or network operations introducing security risks.
+
