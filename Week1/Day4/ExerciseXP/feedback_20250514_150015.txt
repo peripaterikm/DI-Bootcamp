@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day4/ExerciseXP/XP_W1D4.py
+suggestions for improvement:
+- In Exercise 6, the `make_great` function modifies the original list directly.  It's better practice to create a new list with the modified names to avoid altering the original data unless explicitly intended.  This ensures that the original list remains unchanged if you need it later.
+- In Exercise 7, the temperature advice uses a chain of `if/elif` statements.  For a larger number of temperature ranges, a dictionary lookup or other more efficient data structure would be more maintainable.
+- Add docstrings to all functions to explain their purpose, parameters, and return values. This greatly improves readability and maintainability.
+Brief justification:
+- correctness: The code correctly implements the functionality described in Exercises 1-5. Exercise 6 modifies the list in place which is not ideal, but it fulfills the requirements as stated. Exercise 7 fully implements all requirements.  The bonus parts of Exercise 7 are also implemented correctly.
+- readability: The code is generally readable.  However, improvements could be made in Exercise 6, to keep the original list of names intact.  The use of f-strings is good practice for string formatting.  Adding docstrings to functions is a best practice and would improve readability.
+- performance: The code's performance is acceptable for the tasks. There are no obvious performance bottlenecks in the given examples. The random number generation and string operations are efficient.
+- security: There are no security concerns in the provided code. The code does not handle user input in a way that would introduce security vulnerabilities.
+

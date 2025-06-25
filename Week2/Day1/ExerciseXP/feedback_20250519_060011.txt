@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day1/ExerciseXP/XP_W2D1.py
+suggestions for improvement:
+- The provided code implements classes and methods for Cats, Dogs, Songs, and Zoos, but it does not address the main challenge: creating a Farm class with add_animal, get_info, get_animal_types, and get_short_info methods as specified in the chapter content.
+- The code examples are well-structured and easy to follow individually.  However, they are irrelevant to the main problem presented.
+- Consider refactoring the code to address the 'Old MacDonald's Farm' problem, incorporating the specifics outlined in the chapter content (dictionaries for animal counts, string formatting for output, sorted lists etc.).
+Brief justification:
+- correctness: The code does not solve the problem described in the 'Old MacDonald's Farm' section. It presents unrelated class examples.  The chapter specifically requests a `Farm` class with `add_animal`, `get_info`, `get_animal_types`, and `get_short_info` methods. None of these are present in the submitted code. Therefore, the correctness score is 0%.
+- readability: The code for each individual class example (Cat, Dog, Song, Zoo) is well-structured and easy to understand. Variable names are descriptive, and the logic is straightforward. The overall structure of the code could be improved by only including code relevant to the prompt.
+- performance: The individual examples demonstrate efficient use of basic Python constructs. There are no significant performance bottlenecks in the provided code snippets. The performance of the provided code examples is excellent, although irrelevant to the task.
+- security: The provided code snippets do not present any security vulnerabilities.  There's no user input handling or external resource access that could introduce security risks.
+

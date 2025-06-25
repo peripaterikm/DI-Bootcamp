@@ -1,0 +1,14 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day4/DailyChallenge/DailyChallenge_W2D4.py
+suggestions for improvement:
+- Improve error handling in `word_frequency` to handle cases with empty strings or None input more gracefully.
+- Consider using more comprehensive stop word lists from NLTK or spaCy for `remove_stop_words` for better accuracy.
+- In `remove_stop_words`, convert to lowercase before comparison to be case-insensitive, for consistency with other methods.
+- The `most_common_word` method could be optimized for very large texts by using Counter from the collections module.
+- Add more robust file handling in `from_file` to handle different types of encoding issues or other file-reading exceptions.
+- Document the methods using docstrings to improve readability and understanding.
+Brief justification:
+- correctness: The code largely fulfills the requirements of the chapter.  All methods in both `Text` and `TextModification` classes are implemented correctly according to their descriptions, with minor exceptions noted in the feedback. The file handling in `from_file` is good, catching `FileNotFoundError`. The only significant gap is the lack of complete robustness in handling edge cases (like empty input strings) in some methods. This falls slightly short of the expected accuracy and completeness implied by the prompt. The text analysis methods correctly use appropriate data structures (dictionaries, sets) to achieve efficiency.
+- readability: The code is generally well-structured and easy to follow, using clear variable names and comments. However, adding docstrings would significantly improve readability, explaining each method's purpose, parameters, and return values.  Also, using more descriptive variable names in some places (e.g., instead of `freq`, maybe `word_counts`) could make the code slightly easier to understand.
+- performance: The current implementations are reasonably efficient for small texts, but there's room for performance optimization. The most_common_word method, in particular, could benefit from using a more efficient data structure like `collections.Counter` for larger inputs. Also, some regular expressions could be optimized for better performance if handling huge texts.
+- security: The code doesn't exhibit any security vulnerabilities. It correctly handles file input and output, preventing potential issues and doesn't use external inputs in an insecure way.
+
