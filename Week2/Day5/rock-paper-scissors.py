@@ -25,7 +25,7 @@ def main():
             game = Game()
             result = game.play()
             results[result] += 1
-        elif user_1choice == '2':
+        elif user_choice == '2':
             print_results(results)
         elif user_choice == '3':
             print_results(results)
