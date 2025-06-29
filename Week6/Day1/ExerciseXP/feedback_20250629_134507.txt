@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day1/ExerciseXP/public.sql
+suggestions for improvement:
+- The database name should be explicitly set to 'public' using the `CREATE DATABASE public;` command before creating the tables.  The instructions mention creating the `public` database, but the code omits this step.
+- Add email column to the `customers` table as suggested in the exercise description.  Currently, the `customers` table is missing an email column, despite the instructions implying it should exist.
+- The last query `SELECT * FROM customers WHERE last_name <> 'Scott';` is incorrect based on the instructions. It should be `SELECT * FROM customers WHERE first_name <> 'Scott';`.
+Brief justification:
+- correctness: The code correctly creates the `items` and `customers` tables with appropriate columns (except for email in customers). It accurately inserts the specified data into those tables and executes the SELECT queries as requested, with one minor error in the last query.  The omission of the `CREATE DATABASE public;` command slightly lowers the correctness score. The failure to add email addresses to the `customers` table also reduces the score.
+- readability: The SQL code is well-formatted, easy to read, and uses clear naming conventions.  The queries are straightforward and easy to understand.
+- performance: The SQL queries are efficient and optimized for the specified tasks.  There are no unnecessary operations or inefficient joins used.
+- security: No security vulnerabilities are apparent in the provided SQL code.  The code does not include any dynamic SQL or user-provided input that could lead to SQL injection.
+
