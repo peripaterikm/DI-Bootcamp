@@ -1,0 +1,19 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day3/ExerciseXP/W2D3.py
+suggestions for improvement:
+- In Exercise 1, the `__add__` and `__iadd__` methods could be slightly improved for better error handling and clarity.  Instead of directly returning the sum of amounts, create a new Currency object to maintain consistency.  The error messages could also be more user-friendly.
+- In Exercise 1, add a test to demonstrate the TypeError when adding currencies with different labels.
+- Exercise 2 is missing.  The instructions mention creating `func.py` and `exercise_one.py`, but no code for these files is provided.
+- In Exercise 6,  handle potential `ValueError` exceptions if the user provides a birthdate string that doesn't match the specified format. Consider adding input validation.
+- Add comments explaining the purpose of each function or code block to improve overall code readability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day3/ExerciseXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day3/ExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
