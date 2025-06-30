@@ -1,0 +1,12 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day5/ExerciseXP/tic-tac-toe.py
+suggestions for improvement:
+- Add more robust input validation to handle non-numeric input more gracefully.  Currently, a `ValueError` is caught, but a more user-friendly message could be displayed.
+- Consider adding a function to clearly separate the logic for switching players. This improves readability and maintainability.
+- The `check_win` function could be slightly improved for readability by using a helper function for row/column/diagonal checks, thereby reducing code duplication.
+- Add a game start screen with instructions.
+Brief justification:
+- correctness: The code correctly implements a Tic-Tac-Toe game. It creates a board, gets player input, checks for wins and draws, and switches players.  It mostly fulfills all the steps outlined in the Chapter Content/Questions. The minor deductions are due to the lack of a perfect user experience and some areas where the code could be made more readable and maintainable.
+- readability: The code is generally well-structured and easy to follow. Function names are descriptive. However, some minor improvements could enhance readability. For example, separating player switching logic into a dedicated function would improve the overall flow. The error handling for invalid input could be improved to provide more specific feedback to the user.
+- performance: The performance is excellent for this application. The algorithms used are efficient, and there are no obvious bottlenecks.  The code executes quickly, making the game responsive.
+- security: The code doesn't have any security vulnerabilities. It operates solely within the constraints of the game logic and relies on user input without any external dependencies that could introduce security risks.
+

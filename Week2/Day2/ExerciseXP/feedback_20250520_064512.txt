@@ -1,0 +1,15 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day2/ExerciseXP/Pet_dog.py
+suggestions for improvement:
+- In the `PetDog` class's `__init__` method, explicitly list the parameters (name, age, weight) instead of relying on implicit understanding from the `super().__init__` call. This enhances readability and clarity.
+- Add docstrings to the `PetDog` methods to explain their purpose, parameters, and return values. This improves code documentation and maintainability.
+- The `tricks` list in `do_a_trick` could be made more robust.  Consider making it configurable (e.g., passed as an argument or read from a configuration file) to easily extend the list of tricks without modifying the code directly.
+Correctness: 95%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day2/ExerciseXP/XP_W2D2.py
+suggestions for improvement:
+- In Exercise 1, the `Siamese` class could benefit from adding more breed-specific attributes or methods beyond just the color.  Consider adding a method related to their vocalizations or a characteristic behavior.
+- In Exercise 2, the `fight()` method could be improved by handling ties more gracefully or providing a more detailed outcome (e.g., a draw).  The `print` statement within the method isn't ideal; it might be better to return a string with the result.
+- In Exercise 3, the code lacks error handling for the `play()` method in case it receives no arguments. Adding a check to ensure the `*args` list is not empty would enhance robustness.  Also, consider making the `tricks` list a class attribute to avoid redundancy if multiple instances of `PetDog` are created.
+- In Exercise 4, the `check_majority()` method prints a message if the first name isn't found.  While functional, a more elegant approach might be to return a boolean value, indicating whether the check was successful, which would allow better integration into other parts of a larger program.
+Correctness: 95%
+-----
