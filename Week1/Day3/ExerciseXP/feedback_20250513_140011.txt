@@ -1,0 +1,13 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week1/Day3/ExerciseXP/XP_W1D3.py
+suggestions for improvement:
+- In Exercise 1, the provided solution directly assigns the dictionary instead of using the zip function or dictionary comprehension as instructed.
+- In Exercise 2, the bonus part could be improved by adding input validation to handle non-numeric age inputs.
+- In Exercise 3, the code for accessing the last item in `international_competitors` can be simplified using negative indexing.
+- In Exercise 4, parts 1 and 2 can be written more concisely using dictionary comprehension.
+- Exercise 4 part 3 could use `enumerate` for more efficient index tracking during sorting.
+Brief justification:
+- correctness: The code largely fulfills the requirements of all exercises.  Exercise 1 deviates slightly from instructions by directly creating the dictionary instead of using `zip` or comprehension.  Exercises 2, 3, and 4 correctly implement the core logic for calculating costs, manipulating dictionaries, and creating dictionaries based on various patterns. The bonus parts in Exercises 2 and 3 are also correctly implemented.
+- readability: The code is generally readable, but there are instances where it could be improved. For example,  in Exercise 3, using negative indexing for printing the last competitor makes the logic clearer.  In Exercise 4,  using dictionary comprehension would make the code more concise and readable. Some variable names could be more descriptive.
+- performance: The code's performance is good, and it efficiently handles the given tasks. The use of loops and direct dictionary operations are generally efficient. No major performance bottlenecks are observed.
+- security: The code doesn't have any apparent security vulnerabilities.  It doesn't handle any external inputs or data that could pose security risks. The bonus part of Exercise 2 introduces user input, but it doesn't handle potential issues such as malicious input.
+

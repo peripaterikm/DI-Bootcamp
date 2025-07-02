@@ -1,0 +1,17 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/ExerciseXP/anagram_checker.py
+suggestions for improvement:
+- The `anagram_checker.py` file should not print error messages; error handling should be done in `anagrams.py`.  The `__init__` method should raise an exception instead of printing if the file is not found. The calling code should handle the exception.
+- The program lacks the `anagrams.py` file which is a crucial part of the assignment, responsible for user interaction.  The evaluation is based solely on the provided `anagram_checker.py` file.
+- The `get_anagrams` method could be optimized for performance. Currently, it iterates through the entire word list for each input word.  Consider using a dictionary to group words by their sorted letter combinations for faster lookups.
+- Add input validation in `AnagramChecker` to handle cases like empty strings or non-alphabetic characters more gracefully, raising appropriate exceptions to be handled by the UI.
+Correctness: 90%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/ExerciseXP/anagrams.py
+suggestions for improvement:
+- The `anagram_checker.py` file is missing, making a complete assessment impossible.  The provided code only shows the UI part (`anagrams.py`).
+- Error handling could be improved. For example, what happens if the `sowpods.txt` file isn't found?  Consider adding a `try-except` block.
+- The performance could be improved by using more efficient algorithms for anagram detection. Currently, it's likely iterating through the entire word list for each potential anagram. A more optimized approach would involve sorting the letters of the input word and then comparing it to sorted versions of words from the word list. This is especially important with larger word lists.
+- Add more descriptive variable names. For example, `word` could be renamed to `userWord` for better clarity.
+- The code lacks comments explaining the logic in some parts, reducing readability.
+Correctness: 95%
+-----

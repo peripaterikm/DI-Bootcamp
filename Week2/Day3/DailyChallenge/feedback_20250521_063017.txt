@@ -1,0 +1,12 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day3/DailyChallenge/DailyChallenge_W2D3.py
+suggestions for improvement:
+- Add docstrings to methods for better understanding and maintainability.
+- The `__le__` method is redundant given the existence of `__lt__` and `__eq__`.  Python's `sorted()` function can handle this implicitly.
+- Consider adding input validation to ensure radius and diameter are non-negative.
+- The bonus task (drawing circles with Turtle) is not implemented.
+Brief justification:
+- correctness: The code correctly implements a `Circle` class with methods for computing area, adding circles, comparing sizes, and equality checks.  It uses dunder methods effectively for these operations and supports sorting. The minor deduction is due to the absence of the bonus Turtle graphics and lack of input validation for the radius and diameter.  All required functionalities as described in the Chapter Content/Questions are implemented correctly except for the bonus.
+- readability: The code is well-structured and easy to follow. However, the lack of docstrings makes understanding the purpose and usage of methods slightly harder.  Adding docstrings would significantly improve readability.
+- performance: The code's performance is excellent.  The algorithms used are efficient and suitable for the task. There are no obvious performance bottlenecks.
+- security: The code includes input validation in the `__init__` method to prevent errors if neither radius nor diameter is provided. This prevents unexpected exceptions.  No security vulnerabilities are apparent.
+
