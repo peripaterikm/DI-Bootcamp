@@ -1,0 +1,15 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day3/ExerciseXP/W6D3_exercises.sql
+suggestions for improvement:
+- Improve commenting for better readability, especially in more complex queries.  Add comments explaining the logic behind each `JOIN` type.
+- In Exercise 2, Question 6, parts 6.3-6.5, the code assumes the `customer_id` of Matthew Mahan.  This should be a subquery to make the code more robust and avoid hardcoding IDs.
+- The performance of queries in Exercise 2, question 6 could be improved by adding indexes to relevant columns (e.g., `first_name`, `last_name`, `title`, `description`, `rating`, `length`, `return_date`, `replacement_cost`, `customer_id`) to speed up searches.
+- Consider adding error handling (e.g., `TRY...CATCH` blocks) for database operations to gracefully handle potential exceptions (like a foreign key constraint violation during `UPDATE` or `INSERT`).
+Correctness: 95%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day3/ExerciseXP/W6D3_exercises2.sql
+suggestions for improvement:
+- In Exercise 2, part 6, the queries assume the existence of a customer with the name 'Matthew Mahan'.  It would be better to add error handling or a check to ensure the customer exists before proceeding.  This could be done by adding a `COUNT(*)` check on customer selection, and handling the 0 result appropriately (e.g., return an error message or skip the query).
+- The code lacks comments explaining the purpose of each block. Add a comment for each SQL query to explain what it's doing and the context within Exercise 2.
+- For better performance, especially in larger datasets, consider adding indexes to relevant columns used in `JOIN` and `WHERE` clauses, such as `film.language_id`, `rental.return_date`, `customer.customer_id`, etc.
+Correctness: 95%
+-----

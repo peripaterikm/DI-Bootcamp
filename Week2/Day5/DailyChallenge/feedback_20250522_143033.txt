@@ -1,0 +1,8 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/DailyChallenge/DailyChallenge_W2D5.py
+suggestions for improvement:
+- The answers to Exercise 1 are brief but correct.  Expanding on these definitions with examples would improve understanding.
+- In Exercise 2, the `Deck` class correctly implements shuffling and dealing.  However, the `build` method is called within `shuffle`, which is inefficient.  It's better to build the deck only once in the `__init__` method.
+- Consider adding error handling in `deal` to explicitly raise an exception when the deck is empty, instead of returning a string.  This is more consistent with Pythonic error handling.
+- The `__repr__` method in the `Card` class is a good addition for improving debugging and printing the card object.
+Correctness: 95%
+-----

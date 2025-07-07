@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day4/DailyChallenge/W6D4_DailyChallenge.sql
+suggestions for improvement:
+- Exercise 1, Task 1: The code creates a temporary table for competitors with medals in exactly two sports, not for competitors with medals in both Summer and Winter Olympics as requested.  It needs to be refactored to address this.
+- Exercise 1, Task 2:  The code redundantly creates the `competitors_two_sports` table twice. This should be consolidated.
+- Exercise 2, Task 1 and 2: The code correctly implements the tasks.  However, adding comments to explain the logic within each CTE (Common Table Expression) would enhance readability.
+Brief justification:
+- correctness: The code partially addresses the problem. Exercise 1's Task 1 is completely incorrect; it doesn't filter for Summer and Winter Olympics participation.  Task 2 in Exercise 1 is correctly implemented but has redundant code. Exercise 2 correctly implements both tasks.  Therefore, a score of 80% reflects the partial correctness of the solution.
+- readability: The code is generally well-structured and uses clear variable names. However, some improvements in commenting (especially in Exercise 2's CTEs) would boost readability.  The redundant code in Exercise 1 detracts from readability.
+- performance: The use of temporary tables and subqueries is generally efficient for the tasks.  The redundant table creation in Exercise 1 is inefficient.  The code could be optimized further by using JOINs more effectively where applicable to reduce the number of table scans.  Therefore, a score of 85% reflects this.
+- security: No security vulnerabilities are present in the provided SQL code. The code only performs read operations on the database. Therefore, a score of 100% is appropriate.
+
