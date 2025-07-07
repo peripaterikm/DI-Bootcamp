@@ -1,0 +1,15 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day5/ExerciseXP/W6D5_Exercise.sql
+suggestions for improvement:
+- In Task 1 of Exercise 1, consider adding error handling for cases where `popularity` might be NULL.  A `COALESCE` function could be used to handle NULL values gracefully.
+- In Task 2 of Exercise 1, the first query using `NTILE` is correct but less efficient than the second query which uses `RANK`. The first query should be removed for better performance and clarity.  The documentation should state the reason for the second query.
+- In Task 3 of Exercise 1, the `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW` frame specification is a bit verbose.  For running totals, the simpler `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW` is sufficient and more readable.
+- In Task 4 of Exercise 1, the use of `ROW_NUMBER()` within a subquery is unnecessary.  `FIRST_VALUE()` can directly provide the desired result without adding complexity.
+- In Exercise 2, Task 1, while the code is functional, adding an index to the `person_id` column in the `movie_cast` table would significantly improve query performance.
+- Improve documentation by adding comments to explain the rationale behind the CTEs and the choice of window functions in each task.
+- Consider adding more descriptive aliases to table and column names to enhance readability.
+Brief justification:
+- correctness: The code correctly implements all tasks as specified in the chapter content, using appropriate window functions and CTEs. The minor issues noted are optimizations rather than fundamental flaws in addressing the problem.  The solutions directly and accurately address each task's requirements. The only exception is the redundancy in Task 2 of Exercise 1, which negatively affects the efficiency score.
+- readability: The code is generally readable, with clear structure and use of aliases. However, some queries could benefit from more concise syntax and better comments to explain the logic.  The addition of descriptive aliases and clearer comments would improve readability.
+- performance: The performance could be improved in several areas:  Task 2 of Exercise 1 (redundancy), Task 3 of Exercise 1 (simplification of window function), and Exercise 2 Task 1 (index addition). The current implementation is functional but not optimally efficient. The choice of using `RANK()` over `NTILE()` in exercise 1, task 2 is a correct choice given the task's requirement of getting the top 3 movies for each production company.
+- security: The code does not introduce any security vulnerabilities as it only focuses on data retrieval and manipulation within the specified database. No external data sources or user inputs are involved.
+
