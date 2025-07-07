@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day1/DailyChallenge/actors.sql
+suggestions for improvement:
+- The SQL code should be saved in a file with a `.sql` extension (e.g., `actors.sql`) as instructed in the chapter.
+- The comments explaining each SQL command are helpful but could be improved by adding more context or separating the code into different sections to improve readability. 
+- The date format in some `INSERT` statements is inconsistent (DD/MM/YYYY vs. MM/DD/YYYY).  Using a consistent YYYY-MM-DD format is recommended for SQL databases.
+Brief justification:
+- correctness: The code successfully performs the two tasks described in the instructions: It counts the number of actors in the table using `SELECT COUNT(*) FROM actors;` and attempts to insert a new actor with a NULL value for `number_oscars`. The attempt to insert a NULL value will fail because the `number_oscars` column is defined as `NOT NULL`, and this behavior aligns with the exercise's intent to explore the consequences of this constraint.  However, it doesn't explicitly save to a `.sql` file for Github which is a crucial step mentioned in the instructions. Therefore, the score is not 100%.
+- readability: The code is generally readable.  Comments are included to explain the purpose of each SQL statement. However, better structuring and consistent date formatting would improve readability further. 
+- performance: The SQL queries are efficient and well-written for the given tasks. The `COUNT(*)` operation is optimized for counting rows, and there's no unnecessary complexity in the queries.
+- security: No security vulnerabilities are present in the provided SQL code.  It's basic SQL and doesn't involve any sensitive data or operations that could be exploited.
+

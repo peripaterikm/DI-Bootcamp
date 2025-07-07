@@ -1,0 +1,8 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day4/ExerciseXP/W2D4_XP.py
+suggestions for improvement:
+- In `get_words_from_file`, consider adding error handling for other potential file exceptions beyond `FileNotFoundError`.  For instance, `PermissionError` could occur.
+- The `get_random_sentence` function could be improved by checking if the `words` list is empty *before* attempting to select random words. This would prevent errors if the file is empty or contains only whitespace.
+- Improve user experience in `main` by providing more guidance on the file location for the word list. The program could display a clearer message indicating where the user should save `words.txt` relative to the script's location.
+- Add more comprehensive input validation in the `main` function.  For example, check if the user inputs a negative integer or any non-numeric string.
+Correctness: 95%
+-----

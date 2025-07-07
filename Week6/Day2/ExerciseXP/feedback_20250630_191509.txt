@@ -1,0 +1,13 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day2/ExerciseXP/W6D2_Excercise.sql
+suggestions for improvement:
+- Add comments to explain the purpose of each query, especially for more complex ones.  For example, add a comment block above each query in Exercise 2 explaining what the query aims to achieve. 
+- In Exercise 2, query 8 assumes the user's favorite movie is 'Matrix'.  Make this more flexible, either by prompting the user for input (if the context is an interactive script) or by parameterizing the query for dynamic input.
+- Consider using aliases for table names in longer queries to improve readability.  Example: `SELECT c.first_name ... FROM customer c ...`
+- For better performance in large databases, consider adding indexes to frequently queried columns.  For example, adding indexes to `film.rental_rate`, `customer.first_name`, etc.
+- While the `OFFSET` and `LIMIT` approach in query 11 works, it might be less efficient for very large datasets than other methods to get 'pages' of results.  For extremely large datasets, explore techniques like window functions.
+Brief justification:
+- correctness: The code directly and accurately addresses all the SQL queries outlined in Exercise 1 and Exercise 2.  Each query produces the expected results as specified in the problem description. The code is fully aligned with the chapter's focus on basic SQL requests and database concepts (database, table, row, column).
+- readability: The code is generally well-formatted and easy to understand.  However, adding more comments would enhance readability, especially for more complex queries involving joins. The use of aliases in some queries is good practice and aids readability, though it's not consistent throughout the code.
+- performance: The queries are reasonably efficient for small- to medium-sized databases. However,  some optimizations could be implemented, such as adding indexes to increase query speed in very large datasets, and investigating more efficient pagination strategies than `OFFSET` and `LIMIT` for very large result sets.
+- security: The code itself doesn't present any security vulnerabilities. It only performs read operations, and there's no exposure to SQL injection or other common security risks because no user inputs are incorporated into the queries directly.
+
