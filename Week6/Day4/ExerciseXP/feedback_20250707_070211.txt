@@ -1,0 +1,15 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day4/ExerciseXP/W6D4_exercises.sql
+suggestions for improvement:
+- Task 1: The correlated subquery is inefficient.  It's better to join the tables directly to calculate the average age.
+- Task 2: The nested subqueries make the query complex and potentially less efficient.  Optimizations are possible with better joins and CTEs.
+- Task 3 and 4: The use of temporary tables is appropriate and efficient, aligning well with the instructions.
+- Exercise 2 Task 1: The correlated subquery is inefficient. A join-based approach would be significantly faster.  Furthermore, the code is likely to produce inaccurate results if multiple competitors from the same region have different heights, as it applies the same average height to all of them. The UPDATE statement should only affect competitors whose height is currently NULL. 
+- Exercise 2 Task 2:  The query could be optimized for performance. Nested subqueries are not ideal in this context.
+- Exercise 2 Task 3: The approach with CTEs is good, improving readability and potentially performance. 
+- Exercise 2 Task 4: The approach using temporary tables is well-structured and efficient, correctly meeting the task requirements.
+Brief justification:
+- correctness: Most tasks are correctly implemented, but some solutions could be significantly improved in terms of efficiency and accuracy. The code generally aligns with the task requirements; however, Task 1 and Exercise 2, Task 1 have issues with efficiency and potential inaccuracies.
+- readability: The code is generally well-formatted and easy to understand.  The use of CTEs in Exercise 2, Task 3 enhances readability. However, some queries, like Task 2, are complex and could be simplified.
+- performance: The performance of several queries could be significantly improved by optimizing subqueries and using more efficient join strategies.  Correlated subqueries are particularly inefficient. The use of temporary tables in some cases is a positive for performance.
+- security: No security vulnerabilities are present in the provided code.
+
