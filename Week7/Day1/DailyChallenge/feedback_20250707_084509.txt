@@ -1,0 +1,14 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week7/Day1/DailyChallenge/W7D1_DailyChallenge.sql
+suggestions for improvement:
+- The code doesn't explicitly address outlier detection and handling beyond simply identifying the top 3 highest salaries.  A more robust method for outlier detection (e.g., using IQR or standard deviation) should be included.
+- The code handles missing values by replacing NULL department values with 'Unknown'. While this is a common approach, the task description leaves open the possibility of other better methods that should be considered.  A discussion on the implications of this choice would be beneficial.
+- The code only addresses capitalization in one specific case (employee_id 3). A more general approach to ensure consistent capitalization across all employee names should be implemented (e.g., using a SQL function to standardize case).
+- The code checks for data type issues related to the `hire_date` column by ensuring it's in the format '____-__-__', but it doesn't convert it to a proper DATE data type. It should be changed to a DATE data type for accurate analysis.
+- The duplicate row check could be improved by having it actually show the duplicated rows, not just the count.  The `GROUP BY` needs to include `employee_id` to identify duplicates effectively.
+- Add comments explaining the purpose of each section, especially for complex queries and data manipulation steps.
+Brief justification:
+- correctness: The code addresses most aspects of data cleaning mentioned in the problem description. It handles missing values, checks for duplicates (though improvement is needed), fixes one case of inconsistent capitalization, checks the date format (but not data type), and provides a basic outlier check. However, it lacks sophistication in outlier handling and doesn't comprehensively address capitalization or data type conversions.  The sections on duplicate rows and inconsistent names are incomplete and do not fulfill all the requirements.
+- readability: The code is well-structured and uses clear variable names.  The comments are helpful.  It could be improved by adding more comments and explanation for some of the more advanced SQL queries.
+- performance: The SQL queries are generally efficient for the given dataset size.  The use of indexes would improve performance with significantly larger datasets. However, it lacks optimization strategies that could further enhance performance.
+- security: The provided code does not contain any security vulnerabilities as it only performs data manipulation within a local database. No external data sources or user inputs are involved.
+

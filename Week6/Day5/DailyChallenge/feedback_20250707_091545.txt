@@ -1,0 +1,11 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week6/Day5/DailyChallenge/W6D5_DailyChallenge.sql
+suggestions for improvement:
+- Task 2: The use of implicit joins (using commas) is less readable and can be less efficient than explicit JOIN clauses.  Rewrite using explicit JOINs. Also, the approach might not accurately represent 'most consistently' if an actor has many appearances in low-rated movies alongside a few high-rated ones.
+- Task 3: The rolling average uses `ROWS BETWEEN 2 PRECEDING AND CURRENT ROW`.  This will not work correctly for the first two movies of a genre; it should handle edge cases gracefully. Consider using a different window frame or adding a check for sufficient preceding rows.
+- Task 4:  This task assumes a movie 'series' is defined by a single keyword. This is a significant limitation. A more robust solution would involve considering multiple keywords or a more sophisticated series identification mechanism.
+Brief justification:
+- correctness: Task 1 correctly calculates the average budget growth rate. Task 3 calculates a rolling average, although the edge case handling isn't ideal. Task 4 is partially correct, but its definition of 'movie series' is overly simplistic and restricts the analysis. Task 2's approach to identifying the 'most consistently high-rated actor' has a flaw:  it counts the number of movies above average, but doesn't consider the total number of movies an actor's appeared in, leading to an incomplete answer.
+- readability: The code is generally well-structured and uses clear variable names. The use of CTEs improves readability.  However, the implicit join in Task 2 detracts from readability.
+- performance: The queries use window functions effectively and are reasonably efficient. The use of CTEs can improve performance by avoiding redundant subqueries. Task 2's implicit join could be less efficient compared to an explicit join. The performance of Task 3 could be improved by handling the edge case.
+- security: No security vulnerabilities are present in the provided SQL code.  The code only performs read operations on the database.
+
