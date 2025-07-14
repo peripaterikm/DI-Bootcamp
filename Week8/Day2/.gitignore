@@ -1,0 +1,34 @@
+# 📁 Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 🛠️ Virtual environment
+.venv/
+env/
+venv/
+
+# 📦 Package distributions
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 🧪 Jupyter and IPython
+.ipynb_checkpoints/
+
+# 📊 Data files — запрещаем заливку больших CSV и ZIP
+*.csv
+*.zip
+
+# ✅ Explicitly ignore GTD dataset and cleaned export
+Week8/Day2/DailyChallenge/Global Terrorism Database.zip
+global_terrorism_sample_cleaned.csv
+
+# 💻 VSCode settings
+.vscode/
+
+# 💥 Log files and system
+*.log
+.DS_Store
+Thumbs.db
