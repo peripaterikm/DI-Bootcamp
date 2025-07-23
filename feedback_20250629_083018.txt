@@ -1,0 +1,15 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/rock-paper-scissors.py
+suggestions for improvement:
+- The `game.py` file is missing, preventing a complete assessment of the game logic.  The provided `rock-paper-scissors.py` only shows the menu and result handling, assuming the `game.py` file contains the `Game` class implementation.
+- Error handling within the `Game` class (if implemented in `game.py`) should be considered, such as handling invalid user input within `get_user_item()`.
+- Add more robust input validation in `get_user_menu_choice()` to handle non-numeric input more gracefully.
+- Consider using a more descriptive way to represent game results, maybe using an enumeration instead of strings like 'win', 'loss', 'draw'.
+Correctness: 85%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/game.py
+suggestions for improvement:
+- The `game.py` file correctly implements the `Game` class with the methods `get_user_item`, `get_computer_item`, `get_game_result`, and `play` as specified.  However, it lacks error handling for non-string inputs in `get_user_item`.  Adding a `try-except` block would improve robustness. 
+- The instructions mention score tracking, but `game.py` doesn't include it.  The `play` method should return the result, and `rock-paper-scissors.py` should accumulate and display the results.
+- The `rock-paper-scissors.py` file is missing, preventing a complete assessment of its functionality. The correctness score is adjusted down because the score tracking part (essential to the project's goal) is completely absent.
+Correctness: 95%
+-----

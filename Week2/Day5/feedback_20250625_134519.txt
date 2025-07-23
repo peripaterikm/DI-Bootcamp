@@ -1,0 +1,39 @@
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/# rock-paper-scissors.py
+suggestions for improvement:
+- Failed to download file - Status: 400
+Correctness: N/A%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/DailyChallenge/DailyChallenge_W2D5.py
+suggestions for improvement:
+- The provided code implements a deck of cards and does not address the Rock Paper Scissors game as specified in the chapter content.
+- The code should be split into `game.py` and `rock-paper-scissors.py` as instructed.
+- The `game.py` file should contain a `Game` class with methods for getting user input, generating computer choices, determining the game result, and playing a single round.
+- The `rock-paper-scissors.py` file should handle the game menu, score tracking, and overall game flow.
+- Input validation is missing in the provided code (for both files).
+Correctness: 20%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/ExerciseXP/anagram_checker.py
+suggestions for improvement:
+- The provided code implements an anagram checker, which is not related to the Rock Paper Scissors game specified in the Chapter Content/Questions.  It uses file I/O and string manipulation, but these are not the core functionalities requested.
+- The `AnagramChecker` class is well-structured and readable, using clear method names and comments.
+- Performance could be improved by pre-processing the word list to create a dictionary where keys are sorted letters and values are lists of anagrams. This would avoid repeated sorting in `get_anagrams`.
+- The code handles file not found errors gracefully, which is a good security practice. No other specific security risks are present.
+Correctness: 0%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/ExerciseXP/anagrams.py
+suggestions for improvement:
+- The code implements an anagram checker, which is completely unrelated to the Rock Paper Scissors game specified in the chapter content.
+- The `anagram_checker` module is not provided, making the code incomplete and untestable without external dependencies.
+- The menu and game logic described in the chapter are entirely missing.
+- The code lacks error handling for potential exceptions (e.g., file I/O errors if the anagram checker uses external files).
+Correctness: 0%
+-----
+URL: URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week2/Day5/game.py
+suggestions for improvement:
+- The `game.py` file correctly implements the `Game` class with methods to handle user input, computer choice generation, game result determination, and the main game loop.  However, it lacks score tracking, which is mentioned in the instructions as a requirement for the full game.
+- Add input validation in `get_user_menu_choice` to ensure the user inputs a valid option (1, 2, or 3).
+- The `print_results` function could be improved by using f-strings for better readability and maintainability.
+- The `main` function in `rock-paper-scissors.py` is missing, preventing a fully functional game. 
+- Consider adding error handling (try-except blocks) to gracefully handle potential issues like unexpected input types.
+Correctness: 95%
+-----
