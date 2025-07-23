@@ -1,0 +1,14 @@
+URL: https://github.com/peripaterikm/DI-Bootcamp/blob/main/Week7/Day5/ExerciseXP/W7D5_exercises.py
+suggestions for improvement:
+- **Exercise 1:** The provided HTML string for Exercise 1 is a simplified version of the HTML example in the chapter.  It should use the complete HTML provided in the chapter for a more comprehensive test of the scraping capabilities.
+- **Exercise 5:** The code for Exercise 5 relies on parsing text within `<a>` tags to identify security alerts. This approach is fragile and may break if the website's structure changes. A more robust solution would involve inspecting the more structured data provided by the site.
+- **Error Handling:** Add more comprehensive error handling (e.g., `try...except` blocks) to handle potential issues like network errors, invalid URLs, or websites changing their structure.  Currently, many functions will fail silently on such errors. 
+- **Exercise 6:**  The code for exercise 6 uses an OMDb API key which is not sustainable.  The solution should ideally fetch data directly from the IMDB page.  Even if it were possible to use a 3rd party API, there are no guidelines on rate limiting and the sustainability of this solution should be questioned.
+- **User-Agent Rotation:**  For more robust web scraping, consider rotating User-Agents to avoid being blocked by websites.
+- **Rate Limiting:** Implement delays between requests to avoid overloading the target websites.
+Brief justification:
+- correctness: The code addresses most of the exercises outlined in the chapter. However, Exercise 1 uses a simplified HTML example, Exercise 5 uses a fragile approach, and Exercise 6 relies on an external API that may not be sustainable. The other exercises are mostly correct in their implementation.
+- readability: The code is well-structured and uses descriptive variable names.  Functions are generally well-defined and easy to understand.  However, more comprehensive comments and docstrings could be added to improve readability.
+- performance: The performance is reasonable for small-scale tasks.  However,  lack of error handling and rate limiting means performance will degrade significantly under larger loads, and potentially fail due to network issues.  The use of a third-party API for Exercise 6 also adds a performance dependency that might negatively impact the runtime.
+- security: The code includes a User-Agent header, which is a good practice. However, it lacks additional security measures like proper error handling to prevent unexpected exceptions and to ensure that the script does not unintentionally access or modify data it should not.
+
