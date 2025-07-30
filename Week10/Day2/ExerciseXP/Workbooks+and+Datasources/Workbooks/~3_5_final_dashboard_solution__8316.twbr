@@ -1,0 +1,2519 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='job_postings' inline='true' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='job_postings' name='textscan.1h3irv40zw2fli1afnbgd05f8nmu'>
+            <connection class='textscan' directory='/Users/maartenvandenbroeck/Documents/GitHub/courses-case-study-analyzing-job-market-data-in-tableau/Datasets' filename='job_postings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1h3irv40zw2fli1afnbgd05f8nmu' name='job_postings.csv' table='[job_postings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='Job Posting ID' ordinal='0' />
+            <column datatype='date' name='Job Posting Date' ordinal='1' />
+            <column datatype='string' name='Job Title' ordinal='2' />
+            <column datatype='string' name='Job Title Full' ordinal='3' />
+            <column datatype='string' name='Job Title Additional Info' ordinal='4' />
+            <column datatype='string' name='Job Position Type' ordinal='5' />
+            <column datatype='string' name='Job Position Level' ordinal='6' />
+            <column datatype='integer' name='Years of Experience' ordinal='7' />
+            <column datatype='string' name='Job Skills' ordinal='8' />
+            <column datatype='string' name='Job Location' ordinal='9' />
+            <column datatype='integer' name='Minimum Pay' ordinal='10' />
+            <column datatype='integer' name='Maximum Pay' ordinal='11' />
+            <column datatype='string' name='Pay Rate' ordinal='12' />
+            <column datatype='integer' name='Number of Applicants' ordinal='13' />
+            <column datatype='string' name='Company Name' ordinal='14' />
+            <column datatype='string' name='Company Industry' ordinal='15' />
+            <column datatype='string' name='Company Size' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Posting ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Posting ID]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Posting ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Posting Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Job Posting Date]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Posting Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Title]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Title Full</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Title Full]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Title Full</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Title Additional Info</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Title Additional Info]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Title Additional Info</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Position Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Position Type]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Position Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Position Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Position Level]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Position Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years of Experience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years of Experience]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Years of Experience</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Skills</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Skills]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Skills</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Location]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Job Location</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minimum Pay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Minimum Pay]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Minimum Pay</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maximum Pay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maximum Pay]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Maximum Pay</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pay Rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pay Rate]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Pay Rate</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Applicants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Applicants]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Number of Applicants</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Name]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Company Name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Industry]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Company Industry</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Size]</local-name>
+            <parent-name>[job_postings.csv]</parent-name>
+            <remote-alias>Company Size</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[cnt:Job Posting ID:qk]&quot;' value='# of Job Postings' />
+          <alias key='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]&quot;' value='# of Applicants' />
+        </aliases>
+      </column>
+      <column caption='Average Pay' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1059401450573508608]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Minimum Pay] + [Maximum Pay])/2' />
+      </column>
+      <column caption='Tableau Top 3' datatype='string' name='[Calculation_1059401450898460673]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Job Skills - Split 1] = &quot;tableau&quot; OR [Job Skills - Split 2] = &quot;tableau&quot; OR [Job Skills - Split 3] = &quot;tableau&quot; THEN &quot;True&quot; END' />
+      </column>
+      <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+        </aliases>
+      </column>
+      <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+      <column caption='Job Skills - Split 10' datatype='string' name='[Job Skills - Split 10]' role='dimension' type='nominal' user:SplitFieldIndex='10' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 8 ) )' />
+      </column>
+      <column caption='Job Skills - Split 11' datatype='string' name='[Job Skills - Split 11]' role='dimension' type='nominal' user:SplitFieldIndex='11' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 9 ) )' />
+      </column>
+      <column caption='Job Skills - Split 12' datatype='string' name='[Job Skills - Split 12]' role='dimension' type='nominal' user:SplitFieldIndex='12' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 10 ) )' />
+      </column>
+      <column caption='Job Skills - Split 1' datatype='string' name='[Job Skills - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Job Skills - Split 2' datatype='string' name='[Job Skills - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='Job Skills - Split 3' datatype='string' name='[Job Skills - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Job Skills - Split 4' datatype='string' name='[Job Skills - Split 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='Job Skills - Split 5' datatype='string' name='[Job Skills - Split 5]' role='dimension' type='nominal' user:SplitFieldIndex='5' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 3 ) )' />
+      </column>
+      <column caption='Job Skills - Split 6' datatype='string' name='[Job Skills - Split 6]' role='dimension' type='nominal' user:SplitFieldIndex='6' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 4 ) )' />
+      </column>
+      <column caption='Job Skills - Split 7' datatype='string' name='[Job Skills - Split 7]' role='dimension' type='nominal' user:SplitFieldIndex='7' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 5 ) )' />
+      </column>
+      <column caption='Job Skills - Split 8' datatype='string' name='[Job Skills - Split 8]' role='dimension' type='nominal' user:SplitFieldIndex='8' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 6 ) )' />
+      </column>
+      <column caption='Job Skills - Split 9' datatype='string' name='[Job Skills - Split 9]' role='dimension' type='nominal' user:SplitFieldIndex='9' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 7 ) )' />
+      </column>
+      <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Applicants]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Years of Experience]' role='measure' type='quantitative' />
+      <column caption='job_postings.csv' datatype='table' name='[__tableau_internal_object_id__].[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]' role='measure' type='quantitative' />
+      <column-instance column='[Years of Experience]' derivation='Attribute' name='[attr:Years of Experience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1059401450573508608]' derivation='Avg' name='[avg:Calculation_1059401450573508608:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Years of Experience]' derivation='Avg' name='[avg:Years of Experience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Job Posting ID]' derivation='Count' name='[cnt:Job Posting ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Company Industry]' derivation='None' name='[none:Company Industry:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Job Position Level]' derivation='None' name='[none:Job Position Level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Years of Experience]' derivation='None' name='[none:Years of Experience:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Years of Experience]' derivation='None' name='[none:Years of Experience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1059401450573508608]' derivation='Sum' name='[sum:Calculation_1059401450573508608:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Applicants]' derivation='Sum' name='[sum:Number of Applicants:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Years of Experience]' derivation='Sum' name='[sum:Years of Experience:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Company Industry,Job Position Level)' hidden='true' name='[Action (Company Industry,Job Position Level)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Company Industry]' />
+          <groupfilter function='level-members' level='[Job Position Level]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Job Position Level,MONTH(Job Posting Date))' hidden='true' name='[Action (Job Position Level,MONTH(Job Posting Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Job Position Level]' />
+          <groupfilter function='level-members' level='[tmn:Job Posting Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Job Title)' hidden='true' name='[Action (Job Title)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Job Title]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Job Title,Years of Experience)' hidden='true' name='[Action (Job Title,Years of Experience)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Job Title]' />
+          <groupfilter function='level-members' level='[none:Years of Experience:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Tableau case study files/job_postings.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/09/2022 12:41:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='job_postings' increment-value='%null%' refresh-type='create' rows-inserted='25114' timestamp-start='2022-09-09 12:41:56.287' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Job Posting ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Job Posting ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Posting ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Posting Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Job Posting Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Posting Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2906</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Title Full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Title Full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Title Full</remote-alias>
+              <ordinal>3</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1830</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Title Additional Info</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Title Additional Info]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Title Additional Info</remote-alias>
+              <ordinal>4</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1152</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Position Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Position Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Position Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Position Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Position Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Position Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years of Experience</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years of Experience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years of Experience</remote-alias>
+              <ordinal>7</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Skills</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Skills]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Skills</remote-alias>
+              <ordinal>8</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4303</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Location</remote-alias>
+              <ordinal>9</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>960</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Minimum Pay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Minimum Pay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Minimum Pay</remote-alias>
+              <ordinal>10</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>332</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Maximum Pay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Maximum Pay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Maximum Pay</remote-alias>
+              <ordinal>11</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>416</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pay Rate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pay Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pay Rate</remote-alias>
+              <ordinal>12</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Applicants</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Applicants]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Applicants</remote-alias>
+              <ordinal>13</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2642</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Industry</remote-alias>
+              <ordinal>15</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Size</remote-alias>
+              <ordinal>16</ordinal>
+              <family>job_postings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Calculation_1059401450573508608:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[attr:Years of Experience:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Years of Experience:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Years of Experience:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Company Industry:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Broadcast Media&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Events Services&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Insurance&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Oil &amp; Energy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Transportation/Trucking/Railroad&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cosmetics&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Higher Education&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mechanical Or Industrial Engineering&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Retail&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Automotive&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Education Management&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Individual &amp; Family Services&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mental Health Care&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Telecommunications&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Computer &amp; Network Security&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fine Art&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Law Practice&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Professional Training &amp; Coaching&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wine &amp; Spirits&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Business Supplies &amp; Equipment&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Facilities Services&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;International Trade &amp; Development&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Online Media&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Utilities&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Aviation &amp; Aerospace&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Electrical &amp; Electronic Manufacturing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Industrial Automation&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Military&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Textiles&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Consumer Goods&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Government Administration&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Market Research&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Research&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2 school alumni&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Defense &amp; Space&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hospital &amp; Health Care&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Media Production&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Security &amp; Investigations&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Construction&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Furniture&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Machinery&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Banking&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Information Services&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Think Tanks&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Computer Games&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Food &amp; Beverages&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Legal Services&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Public Relations &amp; Communications&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Wireless&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Computer Networking&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Food Production&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Leisure, Travel &amp; Tourism&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Public Safety&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Consumer Electronics&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gambling &amp; Casinos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Management Consulting&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Renewables &amp; Environment&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Consumer Services&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Health, Wellness &amp; Fitness&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Marketing &amp; Advertising&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Restaurants&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chemicals&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Farming&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Internet&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Outsourcing/Offshoring&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Veterinary&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Biotechnology&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Environmental Services&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Information Technology &amp; Services&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Non-profit Organization Management&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Translation &amp; Localization&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Airlines/Aviation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Design&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hospitality&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medical Device&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sporting Goods&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Computer Software&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fundraising&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Logistics &amp; Supply Chain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Publishing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Civil Engineering&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Financial Services&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Investment Management&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pharmaceuticals&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wholesale&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Apparel &amp; Fashion&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;E-learning&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Human Resources&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Medical Practice&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Staffing &amp; Recruiting&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Job Title:nk]' palette='sf_default' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Business System Analyst&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Product Manager&quot;</bucket>
+            </map>
+            <map to='#52b7d8'>
+              <bucket>&quot;Data Analyst&quot;</bucket>
+            </map>
+            <map to='#54a77b'>
+              <bucket>&quot;Data Scientist&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Senior Analyst&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Data Warehouse Engineer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Compensation Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Business Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Solutions Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Operations Manager&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pricing Analyst&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Analytics Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Quality Engineer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Marketing Analyst&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Business Intelligence Analyst&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Systems Analyst&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Developer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Digital Analyst&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Operations Analyst&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Product Analyst&quot;</bucket>
+            </map>
+            <map to='#e16032'>
+              <bucket>&quot;Data Engineer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Business Process Analyst&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Research Analyst&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Financial Analyst&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Data Architect&quot;</bucket>
+            </map>
+            <map to='#ffb03b'>
+              <bucket>&quot;Data Science Manager&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Analytics Manager&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sales Engineer&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Job Position Level:nk]' palette='sf_watermelon' type='palette'>
+            <map to='#0a611b'>
+              <bucket>&quot;Executive&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Director&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Mid-Senior level&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Associate&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Entry level&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Internship&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='job_postings.csv' id='job_postings.csv_68DCB7A2107D4BE9A88C12F1E7F0EA17'>
+            <properties context=''>
+              <relation connection='textscan.1h3irv40zw2fli1afnbgd05f8nmu' name='job_postings.csv' table='[job_postings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='integer' name='Job Posting ID' ordinal='0' />
+                  <column datatype='date' name='Job Posting Date' ordinal='1' />
+                  <column datatype='string' name='Job Title' ordinal='2' />
+                  <column datatype='string' name='Job Title Full' ordinal='3' />
+                  <column datatype='string' name='Job Title Additional Info' ordinal='4' />
+                  <column datatype='string' name='Job Position Type' ordinal='5' />
+                  <column datatype='string' name='Job Position Level' ordinal='6' />
+                  <column datatype='integer' name='Years of Experience' ordinal='7' />
+                  <column datatype='string' name='Job Skills' ordinal='8' />
+                  <column datatype='string' name='Job Location' ordinal='9' />
+                  <column datatype='integer' name='Minimum Pay' ordinal='10' />
+                  <column datatype='integer' name='Maximum Pay' ordinal='11' />
+                  <column datatype='string' name='Pay Rate' ordinal='12' />
+                  <column datatype='integer' name='Number of Applicants' ordinal='13' />
+                  <column datatype='string' name='Company Name' ordinal='14' />
+                  <column datatype='string' name='Company Industry' ordinal='15' />
+                  <column datatype='string' name='Company Size' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+      <datasources>
+        <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+        <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+        <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]'>
+        <groupfilter expression='CONTAINS(LOWER([Job Skills]), LOWER(&apos;tableau&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='tableau' user:ui-pattern_type='contains'>
+          <groupfilter function='level-members' level='[none:Job Skills:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Job Title:nk]' member='&quot;Data Analyst&quot;' />
+          <groupfilter function='member' level='[none:Job Title:nk]' member='&quot;Data Engineer&quot;' />
+          <groupfilter function='member' level='[none:Job Title:nk]' member='&quot;Data Science Manager&quot;' />
+          <groupfilter function='member' level='[none:Job Title:nk]' member='&quot;Data Scientist&quot;' />
+          <groupfilter function='member' level='[none:Job Title:nk]' member='&quot;Machine Learning Engineer&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='quantitative' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]' included-values='in-range'>
+        <min>#2017-01-01 00:00:00#</min>
+        <max>#2021-12-01 00:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Job Analytics' type='sheet' worksheet='Job Titles' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Job Analytics' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_EC26E3871EBB4D87BA73217DE5F35792]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Job Analytics' type='sheet' worksheet='Postings over time' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Job Analytics' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Company Industries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Applicants]' role='measure' type='quantitative' />
+            <column-instance column='[Company Industry]' derivation='None' name='[none:Company Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Applicants]' derivation='Sum' name='[sum:Number of Applicants:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Company Industry:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]</rows>
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Company Industry:nk]</cols>
+      </table>
+      <simple-id uuid='{46F1CE64-19BE-41B4-8BE6-6F93EE261963}' />
+    </worksheet>
+    <worksheet name='Experience Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Years of Experience per Industry</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Years of Experience]' role='measure' type='quantitative' />
+            <column-instance column='[Years of Experience]' derivation='Avg' name='[avg:Years of Experience:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Company Industry]' derivation='None' name='[none:Company Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Position Level]' derivation='None' name='[none:Job Position Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' value='98' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#000000' />
+            <format attr='vertical-align' scope='cols' value='auto' />
+            <format attr='text-orientation' scope='cols' value='-90' />
+            <format attr='text-align' scope='cols' value='right' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_orange' />
+            <format attr='opacity' id='refline0' value='167' />
+            <format attr='boxplot-style' id='refline0' value='glass' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Company Industry:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]</rows>
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]</cols>
+      </table>
+      <simple-id uuid='{F0F88D54-2734-4FC4-9DE5-16CD23ED94E0}' />
+    </worksheet>
+    <worksheet name='Job Level Demand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Tableau Skills Metrics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Applicants]' role='measure' type='quantitative' />
+            <column-instance column='[Job Position Level]' derivation='None' name='[none:Job Position Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting ID]' derivation='Count' name='[pcto:cnt:Job Posting ID:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Applicants]' derivation='Sum' name='[pcto:sum:Number of Applicants:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[pcto:sum:Number of Applicants:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[pcto:cnt:Job Posting ID:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]</rows>
+        <cols total='true'>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</cols>
+        <percentages enabled='true' mode='column' />
+      </table>
+      <simple-id uuid='{DC8E4764-C197-41BB-B372-61C0A4CAED21}' />
+    </worksheet>
+    <worksheet name='Job Titles'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column-instance column='[Job Posting ID]' derivation='CountD' name='[ctd:Job Posting ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_5D6A64F1106846EE97A0CAA5550580DD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Industry]' />
+              <groupfilter function='level-members' level='[Job Position Level]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action2_B3F50E63C54A40A79FD1FBF93670453B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]' />
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' />
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]' />
+              <color column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]</run>
+                <run>&gt; jobs&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontsize='9'><![CDATA[<[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontsize='9'><![CDATA[<[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]> jobs]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]</field>
+                      <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>&quot;Data Science Manager&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-198' y='137' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{A070561E-1F21-43B9-86A8-62362DCC2E2B}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Applicants]' role='measure' type='quantitative' />
+            <column-instance column='[Job Posting ID]' derivation='Count' name='[cnt:Job Posting ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Applicants]' derivation='Sum' name='[sum:Number of Applicants:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[cnt:Job Posting ID:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_5D6A64F1106846EE97A0CAA5550580DD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Industry]' />
+              <groupfilter function='level-members' level='[Job Position Level]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]' value='254' />
+            <format attr='height' value='49' />
+            <format attr='text-format' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[cnt:Job Posting ID:qk]' value='n#,##0;-#,##0' />
+            <format attr='font-weight' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]' value='bold' />
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]' value='29' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]' value='15' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{752B4DF2-1C55-4BD9-B61A-9F4C51248405}' />
+    </worksheet>
+    <worksheet name='Missing Values'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Minimum Pay]' role='measure' type='quantitative' />
+            <column-instance column='[Job Posting ID]' derivation='None' name='[none:Job Posting ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Minimum Pay]' derivation='None' name='[none:Minimum Pay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Minimum Pay]' derivation='Sum' name='[sum:Minimum Pay:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Minimum Pay:qk]' included-values='null' />
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Minimum Pay:qk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Posting ID:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Minimum Pay:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E324E4B3-BEE0-44B5-BE70-BB3E0A0FD030}' />
+    </worksheet>
+    <worksheet name='Postings over time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column-instance column='[Job Posting ID]' derivation='CountD' name='[ctd:Job Posting ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Position Level]' derivation='None' name='[none:Job Position Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_5D6A64F1106846EE97A0CAA5550580DD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Industry]' />
+              <groupfilter function='level-members' level='[Job Position Level]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Internship&quot;</bucket>
+              <bucket>&quot;Entry level&quot;</bucket>
+              <bucket>&quot;Associate&quot;</bucket>
+              <bucket>&quot;Mid-Senior level&quot;</bucket>
+              <bucket>&quot;Director&quot;</bucket>
+              <bucket>&quot;Executive&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]' scope='rows' value='# of Availale Jobs' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]' value='Select time period to filter available jobs'>
+              <formatted-text>
+                <run>Select time period to filter available jobs</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]</rows>
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</cols>
+      </table>
+      <simple-id uuid='{8541FE8D-2802-4F25-99B3-68F92AFE8561}' />
+    </worksheet>
+    <worksheet name='Salary Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Salary Expectations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column caption='Average Pay' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1059401450573508608]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Minimum Pay] + [Maximum Pay])/2' />
+            </column>
+            <column datatype='string' name='[Company Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Maximum Pay]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Minimum Pay]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Years of Experience]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1059401450573508608]' derivation='Avg' name='[avg:Calculation_1059401450573508608:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Years of Experience]' derivation='None' name='[none:Years of Experience:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_5D6A64F1106846EE97A0CAA5550580DD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Industry]' />
+              <groupfilter function='level-members' level='[Job Position Level]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Company Industry,Job Position Level)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]' value='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='multi-mark' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-range-field' value='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]</rows>
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Years of Experience:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Years of Experience:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Calculation_1059401450573508608:qk]</field>
+                  <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</field>
+                  <field>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Years of Experience:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>123500.0</value>
+                <value>&quot;Data Analyst&quot;</value>
+                <value>10</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='22' y='-25' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0A57FB5E-02F6-4ED3-890F-CE6604EA0C65}' />
+    </worksheet>
+    <worksheet name='Skill Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Tableau Skills Metrics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Applicants]' role='measure' type='quantitative' />
+            <column-instance column='[Job Posting ID]' derivation='Count' name='[cnt:Job Posting ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Applicants]' derivation='Sum' name='[sum:Number of Applicants:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[cnt:Job Posting ID:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[sum:Number of Applicants:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AB35280E-3B00-4AC8-82E8-A7F01E81EFBD}' />
+    </worksheet>
+    <worksheet name='Tableau Top 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column caption='Tableau Top 3' datatype='string' name='[Calculation_1059401450898460673]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Job Skills - Split 1] = &quot;tableau&quot; OR [Job Skills - Split 2] = &quot;tableau&quot; OR [Job Skills - Split 3] = &quot;tableau&quot; THEN &quot;True&quot; END' />
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Job Posting ID]' role='dimension' type='ordinal' />
+            <column caption='Job Skills - Split 1' datatype='string' name='[Job Skills - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 1 ) )' />
+            </column>
+            <column caption='Job Skills - Split 2' datatype='string' name='[Job Skills - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 2 ) )' />
+            </column>
+            <column caption='Job Skills - Split 3' datatype='string' name='[Job Skills - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Job Skills]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Job Skills], &quot;,&quot;, 1 ) )' />
+            </column>
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column-instance column='[Job Posting ID]' derivation='CountD' name='[ctd:Job Posting ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1059401450898460673]' derivation='None' name='[none:Calculation_1059401450898460673:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Calculation_1059401450898460673:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1059401450898460673:nk]' member='&quot;True&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Calculation_1059401450898460673:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' />
+              <size column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[ctd:Job Posting ID:qk]' />
+              <text column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0DDF78C8-0FE6-4448-A874-D3DDBD78F0B2}' />
+    </worksheet>
+    <worksheet name='Years of Experience'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+            <column datatype='string' name='[Job Position Level]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Mid-Senior level&quot;' value='Mid-Senior' />
+              </aliases>
+            </column>
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Skills]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Years of Experience]' role='measure' type='quantitative' />
+            <column-instance column='[Years of Experience]' derivation='Avg' name='[avg:Years of Experience:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Position Level]' derivation='None' name='[none:Job Position Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Skills]' derivation='None' name='[none:Job Skills:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Title]' derivation='None' name='[none:Job Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]'>
+            <groupfilter function='level-members' level='[Job Title]' user:ui-action-filter='[Action1_2CB1B4FE1A5B468281FAC875E5AFA401]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[Action (Job Title)]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Skills:nk]</column>
+            <column>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[avg:Years of Experience:qk]</rows>
+        <cols>[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]</cols>
+      </table>
+      <simple-id uuid='{F039E21D-4DA8-451C-A77A-04925B7E19CF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Job Analytics'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Tableau focused jobs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='job_postings' name='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0e6k0yw1mk0qdl0zuu03s1r9jd08'>
+        <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Job Posting Date]' derivation='Month-Trunc' name='[tmn:Job Posting Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='53' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone fixed-size='30' h='4440' id='54' is-fixed='true' type-v2='title' w='99064' x='468' y='935'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93690' id='51' type-v2='layout-basic' w='99064' x='468' y='5375'>
+              <zone h='63269' id='41' param='horz' type-v2='layout-flow' w='67382' x='32150' y='5375'>
+                <zone h='63269' id='5' type-v2='layout-basic' w='67382' x='32150' y='5375'>
+                  <zone h='63269' id='32' name='Salary Analysis' w='67382' x='32150' y='5375'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='30421' id='39' name='Postings over time' show-title='false' w='99064' x='468' y='68644'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18431' id='16' name='KPI' show-title='false' w='31682' x='468' y='5375'>
+                <layout-cache fixed-size-h='94' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44838' id='3' name='Job Titles' show-title='false' w='31682' x='468' y='23806'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='10237' id='43' name='Postings over time' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]' type-v2='filter' values='database' w='19447' x='10496' y='72404' />
+        <zone h='10534' id='42' leg-item-order='normal' name='Postings over time' pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' show-title='false' type-v2='color' w='23664' x='36217' y='72255' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='20'>Tableau focused jobs</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='58' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97626' id='57' param='vert' type-v2='layout-flow' w='98642' x='679' y='1187'>
+                <zone fixed-size='30' h='5638' id='54' type-v2='title' w='98642' x='679' y='1187'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='136' h='18097' id='16' is-fixed='true' name='KPI' show-title='false' w='31548' x='679' y='6825'>
+                  <layout-cache fixed-size-h='94' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='62121' id='32' is-fixed='true' name='Salary Analysis' w='34436' x='32227' y='6825'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44024' id='3' is-fixed='true' name='Job Titles' show-title='false' w='31548' x='679' y='24922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10237' id='43' name='Postings over time' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[tmn:Job Posting Date:qk]' type-v2='filter' values='database' w='19447' x='10496' y='72404'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='29867' id='39' is-fixed='true' name='Postings over time' show-title='false' w='98642' x='679' y='68946'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10534' id='42' leg-item-order='normal' name='Postings over time' pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' show-title='false' type-v2='color' w='23664' x='36217' y='72255'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9667EADC-7D74-45E5-9823-18D10AA78A8E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Missing Values'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Minimum Pay:qk]' show-domain='false' show-null-ctrls='true' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{583D6B62-3A73-49B6-A939-8CB37039F438}' />
+    </window>
+    <window class='worksheet' name='Company Industries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1190F88A-4940-47F7-8530-3487F67D614B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Years of Experience'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69FAEE54-FBB9-4073-9063-B3E4C5E1C5E8}' />
+    </window>
+    <window class='worksheet' name='Postings over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Position Level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{971086D5-F57D-4BA3-A996-277D70BCD2EE}' />
+    </window>
+    <window class='worksheet' name='Job Titles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE3FD419-98FC-4690-ADD2-35E643411742}' />
+    </window>
+    <window class='worksheet' name='Salary Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F981CA8A-AC33-4BB2-ADE1-A57E7F392B39}' />
+    </window>
+    <window class='worksheet' name='Skill Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38DB7532-A0EC-4FD0-9FF9-6DB000EEF42A}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{1138173D-F892-4E22-B5ED-97E027AAA035}' />
+    </window>
+    <window class='worksheet' name='Job Level Demand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{240B7923-C963-44E4-9D63-7CFD05D59B3F}' />
+    </window>
+    <window class='worksheet' name='Tableau Top 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0e6k0yw1mk0qdl0zuu03s1r9jd08].[none:Job Title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{601CD28A-E4FA-4DF2-8952-FD442F48551F}' />
+    </window>
+    <window class='worksheet' name='Experience Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED0A722D-7B23-4DC6-BF0F-ABA2EAE89D27}' />
+    </window>
+    <window class='dashboard' name='Job Analytics'>
+      <viewpoints>
+        <viewpoint name='Job Titles'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Postings over time'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Salary Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{763307CE-E86E-4A4A-908E-02BA1120C68D}' />
+    </window>
+  </windows>
+</workbook>

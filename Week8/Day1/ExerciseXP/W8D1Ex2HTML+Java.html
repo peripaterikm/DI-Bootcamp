@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML+Java</title>
+</head>
+<body>
+  <h1 id="header">Hello World</h1>
+  <button id="clickButton">Click Me</button>
+  <p id="displayText">Button not clicked yet.</p>
+
+  <ul id="bulletList">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+  </ul>
+
+
+  <script>
+      const button = document.getElementById("clickButton");
+      const displayText = document.getElementById("displayText");
+
+      function changeTextAndList() {
+          displayText.innerHTML = "Button clicked!";
+
+          const bulletList = document.getElementById("bulletList");
+
+          const numberedList = document.createElement("ol");
+
+          bulletList.querySelectorAll("li").forEach(item => {
+              const newItem = document.createElement("li");
+              newItem.textContent = item.textContent;
+              numberedList.appendChild(newItem);
+          });
+
+          bulletList.parentNode.replaceChild(numberedList, bulletList);
+      }
+
+      button.addEventListener("click", changeTextAndList);
+  </script>
+</body>
+</html>
