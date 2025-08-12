@@ -1,0 +1,13 @@
+series_id,series_name
+boi_policy_rate_pct,BOI Policy Rate (%)
+cpi_total_index,CPI Index — Total
+dem_col1,Dem Series (Col 1)
+dem_col2,Dem Series (Col 2)
+eur_ils,EUR/ILS
+gbp_ils,GBP/ILS
+gdp_growth_annual_terms_pct,"GDP Growth (annual terms, %)"
+house_price_index,House Price Index (OECD)
+mortgage_volume_total,Mortgage Volumes — Total
+real_wage_avg_monthly,Average Monthly Real Wage
+unemployment_25_64_pct,Unemployment Rate — Ages 25–64 (%)
+usd_ils,USD/ILS
