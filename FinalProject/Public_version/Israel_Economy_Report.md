@@ -1,7 +1,5 @@
 # Israel Economy Overview (2011–2025)
 
-**Generated:** 2025-08-12 17:30 UTC
-
 ---
 
 ## Executive Summary
